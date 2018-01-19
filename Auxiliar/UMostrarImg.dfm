@@ -1,0 +1,64 @@
+object FMostrarImg: TFMostrarImg
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  Caption = 'Imagem'
+  ClientHeight = 420
+  ClientWidth = 578
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnImagem: TPanel
+    Left = 0
+    Top = 0
+    Width = 578
+    Height = 388
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitWidth = 550
+    ExplicitHeight = 211
+    object imImagem: TImage
+      Left = 0
+      Top = 0
+      Width = 578
+      Height = 388
+      Align = alClient
+      Proportional = True
+      ExplicitLeft = 112
+      ExplicitTop = 48
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+  end
+  object pnBotao: TPanel
+    Left = 0
+    Top = 388
+    Width = 578
+    Height = 32
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitTop = 211
+    ExplicitWidth = 550
+    object btOk: TButton
+      Left = 239
+      Top = 4
+      Width = 60
+      Height = 25
+      Caption = '&Ok'
+      ModalResult = 8
+      TabOrder = 0
+      OnClick = btOkClick
+    end
+  end
+end

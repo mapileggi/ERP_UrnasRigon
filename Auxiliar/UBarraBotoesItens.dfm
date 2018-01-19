@@ -1,0 +1,114 @@
+object FBarraBotoesItens: TFBarraBotoesItens
+  Left = 0
+  Top = 0
+  Width = 182
+  Height = 26
+  TabOrder = 0
+  object sbBotoes: TScrollBox
+    Left = 0
+    Top = 0
+    Width = 182
+    Height = 26
+    Align = alClient
+    BorderStyle = bsNone
+    Color = clBtnFace
+    ParentBackground = True
+    ParentColor = False
+    TabOrder = 0
+    object btAnterior: TBitBtn
+      Left = 0
+      Top = 0
+      Width = 26
+      Height = 26
+      Align = alLeft
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentDoubleBuffered = True
+      Spacing = 0
+      TabOrder = 0
+      OnClick = btAnteriorClick
+    end
+    object btProximo: TBitBtn
+      Left = 26
+      Top = 0
+      Width = 26
+      Height = 26
+      Align = alLeft
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentDoubleBuffered = True
+      Spacing = 0
+      TabOrder = 1
+      OnClick = btProximoClick
+    end
+    object btNovo: TBitBtn
+      Left = 52
+      Top = 0
+      Width = 26
+      Height = 26
+      Align = alLeft
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentDoubleBuffered = True
+      Spacing = 0
+      TabOrder = 2
+      OnClick = btNovoClick
+    end
+    object btAlterar: TBitBtn
+      Left = 78
+      Top = 0
+      Width = 26
+      Height = 26
+      Align = alLeft
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentDoubleBuffered = True
+      Spacing = 0
+      TabOrder = 3
+      OnClick = btAlterarClick
+    end
+    object btSalvar: TBitBtn
+      Left = 104
+      Top = 0
+      Width = 26
+      Height = 26
+      Align = alLeft
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentDoubleBuffered = True
+      Spacing = 0
+      TabOrder = 4
+    end
+    object btCancelar: TBitBtn
+      Left = 130
+      Top = 0
+      Width = 26
+      Height = 26
+      Align = alLeft
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentDoubleBuffered = True
+      Spacing = 0
+      TabOrder = 5
+      OnClick = btCancelarClick
+    end
+    object btExluir: TBitBtn
+      Left = 156
+      Top = 0
+      Width = 26
+      Height = 26
+      Align = alLeft
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentDoubleBuffered = True
+      Spacing = 0
+      TabOrder = 6
+    end
+  end
+  object dsDadosItens: TDataSource
+    AutoEdit = False
+    OnStateChange = dsDadosItensStateChange
+    Left = 39
+    Top = 65523
+  end
+end
