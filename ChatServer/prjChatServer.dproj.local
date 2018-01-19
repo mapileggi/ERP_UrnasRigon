@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/06/20 10:33:25.000.562,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/17 17:18:32.000.847,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/17 17:24:39.000.500,C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Delphi\Projetos\Testes\Teste03Messenger\Unit1.pas</Transaction>
+    <Transaction>2017/07/17 17:24:39.000.500,C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Delphi\Projetos\Testes\Teste03Messenger\Unit1.dfm</Transaction>
+    <Transaction>2017/07/17 17:24:42.000.289,C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Delphi\Projetos\Testes\Teste03Messenger\Project1.dproj</Transaction>
+    <Transaction>2017/07/18 13:27:42.000.355,E:\Delphi\Projetos\Testes\Teste03Messenger\UChatServer.pas=E:\Delphi\Projetos\Testes\Teste03Messenger\Unit1.pas</Transaction>
+    <Transaction>2017/07/18 13:27:42.000.355,E:\Delphi\Projetos\Testes\Teste03Messenger\UChatServer.dfm=E:\Delphi\Projetos\Testes\Teste03Messenger\Unit1.dfm</Transaction>
+    <Transaction>2017/07/18 13:27:57.000.757,E:\Delphi\Projetos\Testes\Teste03Messenger\prj.dproj=E:\Delphi\Projetos\Testes\Teste03Messenger\Project1.dproj</Transaction>
+    <Transaction>2017/07/18 13:28:36.000.612,E:\Delphi\Projetos\Testes\Teste03Messenger\prj.dproj=E:\Delphi\Projetos\Testes\Teste03Messenger\prjChatServer.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
