@@ -1,0 +1,51 @@
+unit UVeiculoCadastro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UFormCadastro, UBarraBotoes,
+  Vcl.StdCtrls, Vcl.DBCtrls, Vcl.ExtCtrls, UDBCampoCodigo, Vcl.Mask;
+
+type
+  TFVeiculoCadastro = class(TFFormCadastro)
+    lbcdVeiculo: TLabel;
+    lbdePlaca: TLabel;
+    eddePlaca: TDBEdit;
+    edcdVeiculo: TDBCampoCodigo;
+    lbcdVeiculoTipo: TLabel;
+    edcdVeiculoTipo: TDBCampoCodigo;
+  private
+    procedure GravarRegistro; override;
+    procedure ExcluirRegistro; override;
+  public
+    { Public declarations }
+  end;
+
+var
+  FVeiculoCadastro: TFVeiculoCadastro;
+
+implementation
+
+uses
+  uDmERP, uFuncoes;
+
+{$R *.dfm}
+
+procedure TFVeiculoCadastro.GravarRegistro;
+begin
+  DmERP.GravarVeiculo;
+end;
+
+procedure TFVeiculoCadastro.ExcluirRegistro;
+begin
+  DmERP.ExcluirVeiculo;
+end;
+
+initialization
+  RegisterClass(TFVeiculoCadastro);
+
+finalization
+  UnRegisterClass(TFVeiculoCadastro);
+
+end.
