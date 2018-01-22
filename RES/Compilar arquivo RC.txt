@@ -1,0 +1,15 @@
+ - Executar CMD
+ - cd C:\Program Files (x86)\Embarcadero\Studio\17.0\bin
+ - BRCC32 Nome_Do_Arquivo.RC
+
+//* No Delphi, colocar a diretiva de Compilação:
+    EX: {$R Nome_Do_Arquivo.RES}
+
+//* Tirar os ícones dos Botões
+ 
+//* Incluir via Código os Icones nos Botões:
+    Ex: Nome_Do_Botão.Glyph.LoadResourceName
+          (HInstance, 'ROTULO');  // ROTULO é a Descricao do 
+                                             // Rotulo no arquivo .RC
+                                             // Normalmente utilizado no 
+                                                 Evento OnShow 
