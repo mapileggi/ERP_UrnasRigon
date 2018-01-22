@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.3.16" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42342,7118209722" ReportOptions.Description.Text="" ReportOptions.LastChange="43073,4578572569" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure mUsuDataHoraOnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  mUsuDataHora.Text := UsuarioDataHoraImpressao;  &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="dbPedido" DataSetName="frxDBPedido"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="75,5906" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Align="baCenter" Left="-98,26778" Top="0" Width="914,64626" Height="71,81107" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Referências Vendidas"/>
+      <TfrxPictureView Name="picLogoEmp" Left="0" Top="0" Width="128,50402" Height="71,81107" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+    </TfrxReportTitle>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="472,44125" Width="718,1107">
+      <TfrxMemoView Name="TotalPages" Left="964,559680000001" Top="0" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Pág. [Page] de [TotalPages#]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxLineView Name="Line5" Left="0" Top="0" Width="1046,92913386" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo9" Left="639,52024646" Top="0" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Pág. [Page] de [TotalPages#]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="mUsuDataHora" Left="0" Top="0" Width="641,0082548" Height="18,89765" OnBeforePrint="mUsuDataHoraOnBeforePrint" DataSet="dbRelListaPreco" DataSetName="frxDBRelListaPreco" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="USUARIO - DATA - HORA DE IMPRESSÃO">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxPageFooter>
+    <TfrxColumnHeader Name="ColumnHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="24,56692913" Left="0" Top="117,16543" Width="718,1107">
+      <TfrxMemoView Name="Memo12" Left="241,58240866" Top="0" Width="86,92912409" Height="18,89763535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Qtde."/>
+      <TfrxLineView Name="Line1" Left="0" Top="22,89765" Width="1046,92981" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo5" Left="328,75569559" Top="0" Width="122,83468961" Height="18,89763535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Vl. Liq."/>
+      <TfrxMemoView Name="Memo2" Left="11,33859" Top="0" Width="222,99220409" Height="18,89763535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Referência"/>
+    </TfrxColumnHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="0" Left="0" Top="272,12616" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="dbPedido" DataSetName="frxDBPedido" RowCount="0"/>
+    <TfrxGroupHeader Name="ghSubGrupo" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="204,09462" Width="718,1107" Condition="frxDBPedido.&#34;CDITEMSUbGrupo&#34;">
+      <TfrxMemoView Name="Memo22" Left="0" Top="0" Width="718,1107" Height="22,67717024" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Subgrupo: [frxDBPedido.&#34;deItemSubGrupo&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="gfSubGrupo" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="24,45669535" Left="0" Top="340,1577" Width="718,1107">
+      <TfrxLineView Name="Line6" Left="0" Top="0" Width="1046,92981" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="222,01546" Top="1,75590551" Width="105,82684" Height="22,67716535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBPedido.&#34;nuqTD&#34;&#62;,MasterData1,1)]"/>
+      <TfrxSysMemoView Name="mValorTotal" Left="329,59864" Top="1" Width="122,83468961" Height="22,67716535" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBPedido.&#34;VLTOTALITEM&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="Memo8" Left="15,11812" Top="1,77953" Width="192,75603" Height="22,67716535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Total [frxDBPedido.&#34;deItemSubGrupo&#34;]:"/>
+    </TfrxGroupFooter>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="0" Left="0" Top="249,44898" Visible="False" Width="718,1107" Condition="frxDBPedido.&#34;cdITEM&#34;"/>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Height="22,67716535" Left="0" ParentFont="False" Top="294,80334" Width="718,1107">
+      <TfrxSysMemoView Name="mVlLiqPed" Left="328,66201779" Top="0" Width="122,83468961" Height="22,67716535" StretchMode="smMaxHeight" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[SUM(&#60;frxDBPedido.&#34;VLTOTALITEM&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="frxDBPedidoCDITEM" Left="11,33859" Top="1,66141" Width="219,21274" Height="18,89765" DataField="CDITEM" DataSet="dbPedido" DataSetName="frxDBPedido" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBPedido.&#34;CDITEM&#34;]"/>
+      <TfrxSysMemoView Name="SysMemo4" Left="225,21274" Top="0" Width="102,04731" Height="22,67716535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBPedido.&#34;nuqTD&#34;&#62;,MasterData1,1)]"/>
+    </TfrxGroupFooter>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="389,29159" Width="718,1107">
+      <TfrxLineView Name="Line2" Left="0" Top="0" Width="1046,92981" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="222,01546" Top="1,75590551" Width="105,82684" Height="22,67716535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBPedido.&#34;nuqTD&#34;&#62;,MasterData1,1)]"/>
+      <TfrxSysMemoView Name="SysMemo3" Left="329,59864" Top="1" Width="122,83468961" Height="22,67716535" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBPedido.&#34;VLTOTALITEM&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="Memo3" Left="68,03154" Top="1,77953" Width="139,84261" Height="22,67716535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Total Geral:"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>
